@@ -128,7 +128,7 @@ li {
    Footer & Mobile Breakpoints
    ========================================================================== */
 footer {
-    background-image: url("../assets/images/background-2-desktop.webp");
+    background-image: url("../../assets/images/background-2-desktop.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,7 +145,7 @@ footer p {
 
 @media (max-width: 600px) {
     footer {
-        background-image: url("../assets/images/background-2-mobile.webp");
+        background-image: url("../../assets/images/background-2-mobile.webp");
     }
 
     main {
