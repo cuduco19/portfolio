@@ -39,18 +39,25 @@ header h1 img {
     border-radius: 6px;
 }
 
+/* Flexbox navigation prevents touching edges when wrapping on small screens */
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
 nav a {
     color: var(--text-nav);
     font-weight: 500;
     padding: var(--space-xs) var(--space-sm);
-    margin: 0 4px;
     text-decoration: none;
     background: rgba(17, 24, 39, 0.4);
     backdrop-filter: blur(4px);
     border-radius: 6px;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
     transition: color 0.2s ease, background-color 0.2s ease;
-    display: inline-block;
 }
 
 nav a:hover,
