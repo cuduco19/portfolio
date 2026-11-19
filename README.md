@@ -93,7 +93,7 @@ npx serve .
 
 Audited on the live Netlify production deployment via Google Lighthouse:
 
-* **Performance:** 96 *(Bundled & minified CSS/JS via `esbuild`, WebP assets, deferred script execution)*
+* **Performance:** 99 *(Bundled & minified CSS/JS via `esbuild`, WebP assets, deferred script execution)*
 * **Accessibility:** 100 *(WCAG AA/AAA high-contrast tokens, semantic landmarks, ARIA live regions)*
 * **Best Practices:** 100 *(Secure HTTPS delivery, modern image formats, clean console)*
 * **SEO:** 100 *(Semantic HTML5 structure, descriptive metadata, mobile-friendly viewport)*
@@ -104,6 +104,6 @@ Audited on the live Netlify production deployment via Google Lighthouse:
 
 ## 📬 Contact
 
-* **Portfolio:** [Your Live URL]
-* **GitHub:** [Your GitHub Profile URL]
-* **LinkedIn:** [Your LinkedIn Profile URL]
+* **Portfolio:** [eliot-cuduco.netlify.app](https://eliot-cuduco.netlify.app)
+* **GitHub:** [https://cuduco19.github.io/portfolio](https://cuduco19.github.io/portfolio)
+* **LinkedIn:** [https://www.linkedin.com/in/eliotcuduco](https://www.linkedin.com/in/eliotcuduco)
