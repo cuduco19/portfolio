@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Global Resets & Document Defaults
+   ========================================================================== */
+html {
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable; /* Prevents horizontal layout shift when lightbox locks scroll */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ==========================================================================
+   Typography & Links
+   ========================================================================== */
+h1, h2, h3 {
+    font-family: var(--font-headings);
+    font-weight: 600;
+    margin-top: 0;
+}
+
+h2 {
+    border-bottom: 2px solid var(--border-h2);
+    margin-top: 35px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+a {
+    color: var(--primary);
+}
+
+/* ==========================================================================
+   Keyframes
+   ========================================================================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

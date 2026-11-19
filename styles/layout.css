@@ -1,0 +1,148 @@
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
+header {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--bg-header-footer);
+    color: var(--text-nav);
+    text-align: center;
+    padding: var(--space-xl) 25px;
+}
+
+/* Background image layer behind header text */
+.header-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 0;
+    margin: 0;
+    filter: none;
+}
+
+/* Keep foreground content above .header-bg */
+header h1,
+header nav {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    margin-bottom: 30px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.95);
+}
+
+header h1 img {
+    border-radius: 6px;
+}
+
+nav a {
+    color: var(--text-nav);
+    font-weight: 500;
+    padding: var(--space-xs) var(--space-sm);
+    margin: 0 4px;
+    text-decoration: none;
+    background: rgba(17, 24, 39, 0.4);
+    backdrop-filter: blur(4px);
+    border-radius: 6px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
+    transition: color 0.2s ease, background-color 0.2s ease;
+    display: inline-block;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    color: var(--text-nav-hover);
+    background: rgba(17, 24, 39, 0.7);
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   Main Content Container & Hero Section
+   ========================================================================== */
+main {
+    max-width: 900px;
+    margin: var(--space-lg) auto;
+    background: var(--bg-main);
+    padding: var(--space-lg);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+main p,
+main ul {
+    margin-top: 0;
+    margin-bottom: var(--space-md);
+}
+
+li {
+    margin-bottom: var(--space-xs);
+}
+
+.hero {
+    text-align: center;
+    padding: 1.5rem 0 2rem;
+}
+
+.hero h2 {
+    border-bottom: none;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 2.25rem;
+}
+
+.hero h2 span {
+    display: inline-block;
+    color: var(--primary);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ==========================================================================
+   Responsive Project Grid
+   ========================================================================== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+}
+
+/* ==========================================================================
+   Footer & Mobile Breakpoints
+   ========================================================================== */
+footer {
+    background-image: url("../assets/images/background-2-desktop.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--bg-header-footer);
+    color: var(--text-nav);
+    text-align: center;
+    padding: var(--space-xl) 25px;
+}
+
+footer p {
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85), 0 1px 3px rgba(0, 0, 0, 0.95);
+}
+
+@media (max-width: 600px) {
+    footer {
+        background-image: url("../assets/images/background-2-mobile.webp");
+    }
+
+    main {
+        padding: 24px;
+        margin: var(--space-md) 15px;
+    }
+}

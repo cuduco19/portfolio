@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Design Tokens (Light Mode Default)
+   ========================================================================== */
+:root {
+    /* Typography */
+    --font-headings: "Plus Jakarta Sans", sans-serif;
+    --font-body: "Inter", sans-serif;
+
+    /* Brand & Status Colors */
+    --primary: #3b82f6;
+    --primary-hover: #2563eb;
+    --status-success: #059669; /* Emerald 600 - matches Tailwind Slate/Blue palette */
+
+    /* Spacing Scale */
+    --space-xs: 6px;
+    --space-sm: 12px;
+    --space-md: 20px;
+    --space-lg: 40px;
+    --space-xl: 50px;
+
+    /* Surfaces & Text */
+    --bg-body: #f9fafb;
+    --bg-main: #ffffff;
+    --bg-card: #f8fafc;
+    --bg-header-footer: #1f2937;
+    --text-main: #1f2937;
+    --text-muted: #4b5563;
+    --text-nav: #ffffff;
+    --text-nav-hover: #60a5fa;
+
+    /* Borders, Shadows & Radii */
+    --border-h2: #e5e7eb;
+    --border-input: #cbd5e1;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --radius: 10px;
+}
+
+/* ==========================================================================
+   Automatic Dark Mode Overrides
+   ========================================================================== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #60a5fa;
+        --primary-hover: #3b82f6;
+        --status-success: #34d399; /* Emerald 400 - crisp contrast on dark slate */
+        --bg-body: #111827;
+        --bg-main: #1f2937;
+        --bg-card: #111827;
+        --bg-header-footer: #111827;
+        --text-main: #f9fafb;
+        --text-muted: #d1d5db;
+        --text-nav: #ffffff;
+        --text-nav-hover: #93c5fd;
+        --border-h2: #374151;
+        --border-input: #4b5563;
+        --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+}
