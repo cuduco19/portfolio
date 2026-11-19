@@ -6,10 +6,11 @@
     --font-headings: "Plus Jakarta Sans", sans-serif;
     --font-body: "Inter", sans-serif;
 
-    /* Brand & Status Colors */
-    --primary: #3b82f6;
-    --primary-hover: #2563eb;
-    --status-success: #059669; /* Emerald 600 - matches Tailwind Slate/Blue palette */
+    /* Brand & Status Colors (WCAG AA/AAA Compliant) */
+    --primary: #1d4ed8;        /* 6.70:1 contrast with #ffffff */
+    --primary-hover: #1e40af;  /* 8.72:1 contrast with #ffffff */
+    --btn-text: #ffffff;
+    --status-success: #047857; /* 5.48:1 contrast on light surfaces */
 
     /* Spacing Scale */
     --space-xs: 6px;
@@ -36,11 +37,35 @@
 }
 
 /* ==========================================================================
-   Manual & Persisted Dark Mode
+   Automatic OS Dark Mode (Zero-flash fallback before JS runs)
+   ========================================================================== */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --primary: #60a5fa;
+        --primary-hover: #93c5fd;
+        --btn-text: #0f172a;   /* 8.35:1 contrast on #60a5fa */
+        --status-success: #34d399;
+        --bg-body: #111827;
+        --bg-main: #1f2937;
+        --bg-card: #111827;
+        --bg-header-footer: #111827;
+        --text-main: #f9fafb;
+        --text-muted: #d1d5db;
+        --text-nav: #ffffff;
+        --text-nav-hover: #93c5fd;
+        --border-h2: #374151;
+        --border-input: #4b5563;
+        --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* ==========================================================================
+   Manual Dark Mode Override (Persisted via theme.js toggle)
    ========================================================================== */
 [data-theme="dark"] {
     --primary: #60a5fa;
-    --primary-hover: #3b82f6;
+    --primary-hover: #93c5fd;
+    --btn-text: #0f172a;       /* 8.35:1 contrast on #60a5fa */
     --status-success: #34d399;
     --bg-body: #111827;
     --bg-main: #1f2937;

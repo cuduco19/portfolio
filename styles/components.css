@@ -4,7 +4,7 @@
 .btn {
     display: inline-block;
     background: var(--primary);
-    color: #ffffff;
+    color: var(--btn-text);
     padding: 0.75rem 1.5rem;
     border-radius: var(--radius);
     text-decoration: none;
@@ -13,7 +13,7 @@
     font-family: inherit;
     font-weight: 600;
     font-size: 1rem;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
