@@ -104,6 +104,6 @@ Audited on the live Netlify production deployment via Google Lighthouse:
 
 ## 📬 Contact
 
-* **Portfolio:** [eliot-cuduco.netlify.app](https://eliot-cuduco.netlify.app)
+* **Portfolio:** [eliotcuduco.netlify.app](https://eliotcuduco.netlify.app)
 * **GitHub:** [https://cuduco19.github.io/portfolio](https://cuduco19.github.io/portfolio)
 * **LinkedIn:** [https://www.linkedin.com/in/eliotcuduco](https://www.linkedin.com/in/eliotcuduco)
