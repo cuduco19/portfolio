@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Rounded Dark Square with Blue Border -->
+  <rect x="4" y="4" width="92" height="92" rx="22" fill="#1e293b" stroke="#3b82f6" stroke-width="6"/>
+  
+  <!-- Letter E (Vector Path) -->
+  <path d="M24 31 H46 V38 H32 V46.5 H44 V53.5 H32 V62 H46 V69 H24 Z" fill="#f8fafc"/>
+  
+  <!-- Letter C (Vector Path) -->
+  <path d="M76 41.5 C73.5 38.5 69.8 37 65.5 37 C58.2 37 53 42.5 53 50 C53 57.5 58.2 63 65.5 63 C69.8 63 73.5 61.5 76 58.5 L81.2 63.5 C77.3 67.8 71.8 70 65.2 70 C53.8 70 45 61.5 45 50 C45 38.5 53.8 30 65.2 30 C71.8 30 77.3 32.2 81.2 36.5 Z" fill="#f8fafc"/>
+</svg>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Personal bio and portfolio of Eliot Cuduco, a web developer specializing in clean, fast, and responsive websites using HTML, CSS, and JavaScript.">
+        <title>Eliot Cuduco - Software Engineer | EvanCru</title>
+        <link rel="canonical" href="https://evancru.com">
+
+        <!-- Favicons -->
+        <link rel="icon" type="image/png" href="assets/icons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+        <link rel="shortcut icon" href="assets/icons/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+        <link rel="manifest" href="assets/icons/site.webmanifest">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/style.css">
+        <script type="module" src="scripts/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="assets/images/background-2-desktop.webp"
+                 srcset="assets/images/background-2-mobile.webp 600w, assets/images/background-2-desktop.webp 1400w"
+                 sizes="100vw"
+                 alt=""
+                 class="header-bg"
+                 fetchpriority="high"
+                 width="1400"
+                 height="2100">
+            <h1>
+                <img src="assets/icons/favicon.svg" alt="" width="34" height="34" style="vertical-align: middle; margin-right: 8px;">
+                Eliot Cuduco
+            </h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero" class="hero">
+                <h2>Hello, <span>Eliot</span></h2>
+                <p>Front-End Developer &amp; Web Enthusiast</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </section>
+
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I am a Software Engineer with both a <strong>B.S. and M.S. in Computer Science</strong> earned in the United States, bringing <strong>over 10 years of industry experience</strong> designing and building reliable software. While the majority of my career has focused on back-end architecture, data engineering, and ETL pipelines, I also work across the full stack to deliver clean, responsive, and user-friendly web applications.
+                </p>
+                <img src="assets/images/profile.webp" class="profile-pic" alt="Photo of Eliot Cuduco" decoding="async" width="300" height="450">
+                
+                <h3>When I'm Not Coding</h3>
+                <ul>
+                    <li>Reading</li>
+                    <li>Acting</li>
+                    <li>Dancing</li>
+                    <li>Theology</li>
+                    <li>Political Action</li>
+                </ul>
+            </section>
+          
+            <section id="projects">
+                <h2>My Projects</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="assets/images/project-1.webp" alt="Responsive Landing Page preview" loading="lazy" decoding="async" width="600" height="400">
+                        <h3>Landing Page</h3>
+                        <p>A mobile-first responsive landing page built with semantic HTML5, CSS Grid/Flexbox, and accessible navigation.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/project-2.webp" alt="Calculator app preview" loading="lazy" decoding="async" width="600" height="400">
+                        <h3>Calculator</h3>
+                        <p>A frosted-glass calculator built with CSS Grid and Vanilla JavaScript, featuring keyboard shortcuts and divide-by-zero handling.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/project-3.webp" alt="To-Do List App preview" loading="lazy" decoding="async" width="600" height="400">
+                        <h3>To-Do List App</h3>
+                        <p>A persistent task manager using Vanilla JavaScript, LocalStorage, and ARIA live regions for live filtering and reordering.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/project-4.webp" alt="Random Quote Generator preview" loading="lazy" decoding="async" width="600" height="400">
+                        <h3>Random Quote Generator</h3>
+                        <p>An async JavaScript quote app using Fetch API with offline fallback, one-click clipboard copy, and a quote history log.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/project-5.webp" alt="Weather App preview" loading="lazy" decoding="async" width="600" height="400">
+                        <h3>Weather App</h3>
+                        <p>A real-time weather dashboard built with JavaScript Fetch API and async/await to display live conditions and forecasts.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>My Skills</h2>
+                <ul>
+                    <li>HTML &amp; CSS</li>
+                    <li>JavaScript</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="mailto:cuduco_19@hotmail.com">Eliot Cuduco</a></p>
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="current-year">2026</span> EvanCru. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
