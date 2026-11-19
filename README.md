@@ -91,10 +91,14 @@ npx serve .
 
 ## 📊 Performance & Quality Standards
 
-Built to meet high Core Web Vitals and Google Lighthouse benchmarks out of the box:
-* **Performance:** 98–100 *(Bundled & minified CSS/JS via `esbuild`, WebP assets, deferred script execution)*
-* **Accessibility:** 98–100 *(Semantic HTML, high-contrast color tokens, ARIA live regions)*
-* **Best Practices & SEO:** 100 *(Responsive viewport configuration, clean relative asset routing)*
+Audited on the live Netlify production deployment via Google Lighthouse:
+
+* **Performance:** 96 *(Bundled & minified CSS/JS via `esbuild`, WebP assets, deferred script execution)*
+* **Accessibility:** 100 *(WCAG AA/AAA high-contrast tokens, semantic landmarks, ARIA live regions)*
+* **Best Practices:** 100 *(Secure HTTPS delivery, modern image formats, clean console)*
+* **SEO:** 100 *(Semantic HTML5 structure, descriptive metadata, mobile-friendly viewport)*
+
+![Google Lighthouse Audit Score](assets/images/lighthouse-audit.webp)
 
 ---
 
