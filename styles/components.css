@@ -21,6 +21,26 @@
     text-decoration: none;
 }
 
+/* Header Light/Dark Mode Toggle Button */
+.theme-btn {
+    background: rgba(17, 24, 39, 0.5);
+    color: var(--text-nav);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    padding: var(--space-xs) 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.4;
+    backdrop-filter: blur(4px);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.theme-btn:hover,
+.theme-btn:focus-visible {
+    background: rgba(17, 24, 39, 0.8);
+    transform: scale(1.05);
+}
+
 .profile-pic {
     width: 100%;
     max-width: 220px;         /* Adjust between 180px and 250px to taste */
@@ -198,20 +218,14 @@
     opacity: 1;
 }
 
-.theme-btn {
-    background: rgba(17, 24, 39, 0.5);
-    color: var(--text-nav);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 6px;
-    padding: 6px 10px;
-    margin-left: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    backdrop-filter: blur(4px);
-    transition: background-color 0.2s ease, transform 0.2s ease;
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem;
+    margin-bottom: 1.25rem;
 }
 
-.theme-btn:hover {
-    background: rgba(17, 24, 39, 0.8);
-    transform: scale(1.05);
+.contact-links a {
+    font-weight: 500;
 }
