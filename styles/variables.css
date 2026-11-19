@@ -36,23 +36,21 @@
 }
 
 /* ==========================================================================
-   Automatic Dark Mode Overrides
+   Manual & Persisted Dark Mode
    ========================================================================== */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary: #60a5fa;
-        --primary-hover: #3b82f6;
-        --status-success: #34d399; /* Emerald 400 - crisp contrast on dark slate */
-        --bg-body: #111827;
-        --bg-main: #1f2937;
-        --bg-card: #111827;
-        --bg-header-footer: #111827;
-        --text-main: #f9fafb;
-        --text-muted: #d1d5db;
-        --text-nav: #ffffff;
-        --text-nav-hover: #93c5fd;
-        --border-h2: #374151;
-        --border-input: #4b5563;
-        --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    }
+[data-theme="dark"] {
+    --primary: #60a5fa;
+    --primary-hover: #3b82f6;
+    --status-success: #34d399;
+    --bg-body: #111827;
+    --bg-main: #1f2937;
+    --bg-card: #111827;
+    --bg-header-footer: #111827;
+    --text-main: #f9fafb;
+    --text-muted: #d1d5db;
+    --text-nav: #ffffff;
+    --text-nav-hover: #93c5fd;
+    --border-h2: #374151;
+    --border-input: #4b5563;
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
