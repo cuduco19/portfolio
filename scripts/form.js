@@ -36,7 +36,8 @@ export function initContactForm() {
                 statusMsg.textContent = 'Thanks! Your message was sent.';
                 form.reset();
             } else {
-                statusMsg.textContent = 'Oops! There was a problem sending your message.';
+                const data = await response.json().catch(() => null);
+                statusMsg.textContent = data?.errors?.[0]?.message || 'Oops! There was a problem sending your message.';
             }
         } catch {
             statusMsg.textContent = 'Network error. Please try again later.';
