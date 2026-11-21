@@ -194,6 +194,18 @@
     margin: 1.25rem 0 0.5rem;
 }
 
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem;
+    margin-bottom: 1.25rem;
+}
+
+.contact-links a {
+    font-weight: 500;
+}
+
 /* ==========================================================================
    Contact Form & Inline Feedback
    ========================================================================== */
